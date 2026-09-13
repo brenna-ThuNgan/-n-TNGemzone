@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNGemZone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stylemain.css">
+</head>
+<body>
+    <div class="dau-trang">
+    <header>
+        <img id="logo" src="../img/logo.png" alt="logo">
+        <div  id="ten">
+            <h1>TN<span>GemZone</span></h1>
+            <p>Nâng Tầm Trải Nghiệm - Kết Nối Đam Mê</p>
+        </div>
+    </header>
+<nav>
+    <a href="/index.html">Trang Chủ</a>
+    <div class="thads">
+        <a href="#">Tin Tức ▾</a>
+        <ul class="dscon">
+           <li><a href="/webcon/tintuc.html">Cập Nhật</a></li>
+            <li><a href="/webcon/tintuc.html#sukien">Sự Kiện</a></li>
+            <li><a href="/webcon/giaidau.html">Giải Đấu</a></li>
+            <li><a href="/webcon/tintuc.html#canbang">Cân Bằng</a></li>
+            <li><a href="/webcon/tintuc.html#sualoi">Sửa lỗi</a></li>
+        </ul>
+    </div>
+    <div class="thads">
+        <a href="#">Học Viện ▾</a>
+        <ul class="dscon">
+            <li><a href="/webcon/baiviet.html#taobai">Bài Viết</a></li>
+            <li><a href="/webcon/baiviet.html#baivietnoibat">Bài viết Nổi Bật</a></li>
+        </ul>
+    </div>
+       <a href="/webcon/gameplay.html"class="active"><div class="thanh-ngang"><span class="traitim">♥</span></div>GamePlay</a>
+</nav>
+    </div>
+<main>
+    <div class="khung-anh"><div id="vungTruot"></div></div>
+    </div>
+<div class="tvtp">
+    <div class="khung-nd">
+        <div class="cottrai">
+        <div class="hinh">
+    <img id="hinh-lon" src="../img/Nata.jpg" alt="Hình ảnh nhân vật lớn"></div><br>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+    <div><h2>Trang Phục</h2></div>
+<div class="ds">
+    <img class="hinh-nho active" src="../img/Nata.jpg">
+    <img class="hinh-nho" src="../img/nata1.jpg">
+    <img class="hinh-nho" src="../img/nata2.jpg">
+    <img class="hinh-nho" src="../img/nata3.jpg">
+    <img class="hinh-nho" src="../img/nata4.jpg">
+    <img class="hinh-nho" src="../img/nata5.jpg">
+</div>
+<div><div class="thanh-ngang"><span class="traitim">♥</span></div>
+    <h2>Kỹ Năng</h2>
+<div class="ds-icon">
+    <div class="icon active" onclick="doiSkill(this)" 
+         data-tieu-de="Âm hỏa" 
+         data-noidung="<b>Nội tại:</b> Dùng kỹ năng sẽ gây thêm sát thương phép cho địch, có thể cộng dồn tối đa 10 lần trong 3 giây.">
+        <img src="../img/ntn.png" alt="Âm hỏa">
+    </div>
+
+    <div class="icon" onclick="doiSkill(this)" 
+         data-tieu-de="Ác Quỷ Tụ Hội" 
+         data-noidung="Natalya triệu hồi 5 bóng ma tấn công nơi chỉ định, gây sát thương phép. Mục tiêu trúng nhiều bóng ma sẽ phải chịu thêm sát thương với các bóng ma sau. Các bóng ma trúng tướng địch sẽ biến mất ngay sau đó, giúp Natalya giảm hồi chiêu và hồi lại 1 phần năng lượng.">
+        <img src="../img/c1n.png" alt="Ác Quỷ Tụ Hội">
+    </div>
+
+    <div class="icon" onclick="doiSkill(this)" 
+         data-tieu-de="Quả Cầu Hắc Ám" 
+         data-noidung="Natalya tung ra một quả cầu năng lượng gây choáng nếu bay hết tầm hoặc trúng kẻ địch đầu tiên, rồi tiếp tục lơ lửng thêm thoáng chốc khiến các nạn nhân trong tầm ảnh hưởng chịu sát thương phép liên tục 5 lần và bị làm chậm tốc chạy.">
+        <img src="../img/c2n.png" alt="Quả Cầu Hắc Ám">
+    </div>
+
+    <div class="icon" onclick="doiSkill(this)" 
+         data-tieu-de="Tia sáng tử vong" 
+         data-noidung="Natalya tập trung năng lượng phóng ra một luồng năng lượng chết chóc gây sát thương phép mỗi 0.25 giây, đồng thời nhận được một lớp lá chắn giúp miễn dịch trạng thái khống chế và chặn sát thương thời gian hiệu lực. Natalya sẽ xóa toàn bộ hiệu ứng khống chế trên bản thân, đồng thời miễn nhiễm với chúng chừng nào chiếc khiên còn tồn tại.">
+        <img src="../img/c3n.png" alt="Tia sáng tử vong">
+    </div>
+</div>
+
+<div class="khung-chi-tiet">
+    <h3 id="tieu-de-skill">Âm hỏa</h3>
+    <p id="mo-ta-skill"><b>Nội tại:</b> Dùng kỹ năng sẽ gây thêm sát thương phép cho địch, có thể cộng dồn tối đa 10 lần trong 3 giây.</p></div>
+</div>
+</div>
+<div class="cotphai">
+        <h3 class="chu">Natalya | Hiểm Họa Địa Ngục</h3>
+        <p>Trước thảm họa bè lũ ác quỷ xâm lăng thế giới, một nhóm quang minh chiến sĩ đã tự nguyện hy sinh bản thân, họ sẵn sàng gánh chịu thứ nguyền rủa ma thuật tà ác để trở thành những hộ vệ bất tử của Tháp quang minh. Dầu thành công ngăn chặn cuộc xâm lược, nhưng họ buộc phải lùi vào bóng tối vì thứ nguyền rủa đang mang trên mình, và Natalya chính là hậu duệ của những chiến sĩ này.</p><br>
+        <p>Kẻ bị nguyền rủa không thể chết cho đến khi truyền lại nó cho dòng dõi của họ, và đó là cách Natalya trở thành kẻ bị nguyền rủa. Đôi khi sẽ có những kẻ không thế khống chế thứ năng lượng tà ác bên trong, khiến họ trở nên điên loan và nuốt chửng các đồng loai của mình Càng cắn nuốt lẫn nhau, họ lại càng trở nên hùng mạnh. Trước mối hiểm họa bị xâm lược, Tháp quang minh đã quyết định duy trì, và thậm chí nuôi dưỡng những chiến sĩ bị nguyền rủa này.</p><br>
+        <p>Natalya là một trong những chiến sĩ nổi bật nhất, đến mức thánh điện đã chuẩn bị sẵn cả một bữa tiệc để chúc mừng lễ trưởng thành của cô. Nhưng họ nào ngờ rắng Natalya đã chán ghét cuộc sống địa ngục không chút tự tôn này đến tận cổ. Thứ cảm xúc tội lỗi cô gánh chịu mỗi ngày khi buộc phải chứng kiến và tự tay sát hại các đồng loại của mình đã đến lúc để bùng nổ.</p><br>
+        <p>"Tất cả tội ác, cứ để ta gánh vác!" Natalya ngay tại lễ trưởng thành của mình đã cần nuốt tất cả đồng loại để kết liễu cuộc sống địa ngục của họ. Chưa dừng lại ở đó, cô tiêu diệt luôn cả gã sứ giả của thánh điện để chứng minh cho chúng thấy quyết tâm của mình, bởi cô biết rõ chính chúng là cội nguồn của thứ nguyền rủa này.</p><br>
+        <p>Sau đó Natalya náu mình trong bóng tối, cô thậm chí còn tách được lời nguyền ra khỏi bản thân và ký kết hiệp ước với chúng bằng cách tuyên thệ thần phục Veera. Từ đấy về sau Natalya, với sức mạnh của lời nguyền nay là trợ thủ, trở thành một cỗ lực lượng khủng khiếp đến cùng cực. Uy danh của nàng cũng lan xa trên lục địa Athanor.</p>
+        </div>
+    </div>
+</div>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+</main>
+    <footer>
+        <div> 
+            Thông tin liên hệ:<span>Nguyễn Thị Thu Ngân</span> 
+            <br>Địa chỉ: <span>CĐ CNTT K25A</span>
+            <br>Số điện thoại:<span>0355518725</span>
+        </div>
+        <p style="font-family: Segoe Print">cre:lienquan_hình ảnh chỉ mang tính chất minh họa và sử dụng cho học tập</p>
+    </footer>
+    <script src="../java/scrip.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNGemZone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stylemain.css">
+</head>
+<body>
+    <div class="dau-trang">
+    <header>
+        <img id="logo" src="../img/logo.png" alt="logo">
+        <div  id="ten">
+            <h1>TN<span>GemZone</span></h1>
+            <p>Nâng Tầm Trải Nghiệm - Kết Nối Đam Mê</p>
+        </div>
+    </header>
+<nav>
+    <a href="/index.html">Trang Chủ</a>
+    <div class="thads">
+        <a href="#">Tin Tức ▾</a>
+        <ul class="dscon">
+           <li><a href="/webcon/tintuc.html">Cập Nhật</a></li>
+            <li><a href="/webcon/tintuc.html#sukien">Sự Kiện</a></li>
+            <li><a href="/webcon/giaidau.html">Giải Đấu</a></li>
+            <li><a href="/webcon/tintuc.html#canbang">Cân Bằng</a></li>
+            <li><a href="/webcon/tintuc.html#sualoi">Sửa lỗi</a></li>
+        </ul>
+    </div>
+    <div class="thads">
+        <a href="#">Học Viện ▾</a>
+        <ul class="dscon">
+            <li><a href="/webcon/baiviet.html#taobai">Bài Viết</a></li>
+            <li><a href="/webcon/baiviet.html#baivietnoibat">Bài viết Nổi Bật</a></li>
+        </ul>
+    </div>
+       <a href="/webcon/gameplay.html"class="active"><div class="thanh-ngang"><span class="traitim">♥</span></div>GamePlay</a>
+</nav>
+    </div>
+<main>
+    <div class="khung-anh"><div id="vungTruot"></div></div>
+    </div>
+<div class="tvtp">
+    <div class="khung-nd">
+        <div class="cottrai">
+        <div class="hinh">
+            <img id="hinh-lon" src="../img/Lavie.jpg" alt="Hình ảnh nhân vật lớn"></div><br>
+            <div class="thanh-ngang"><span class="traitim">♥</span></div>
+            <div><h2>Trang Phục</h2></div>
+<div class="ds">
+    <img class="hinh-nho active" src="../img/Lavie.jpg">
+    <img class="hinh-nho" src="../img/lavie3.jpg">
+    <img class="hinh-nho" src="../img/lavie7.jpg">
+    <img class="hinh-nho" src="../img/lavie11.jpg">
+            </div>
+            <div><div class="thanh-ngang"><span class="traitim">♥</span></div>
+    <h2>Kỹ Năng</h2>
+    <div class="ds-icon">
+    <div class="icon active" onclick="doiSkill(this)" 
+         data-tieu-de="Đạn liên châu" 
+         data-noidung="<b>Nội tại:</b><br>Mỗi đòn đánh thường trúng đích của Laville lên mục tiêu sẽ giúp bản thân tích lũy nội tại, tối đa tích lũy 3 tầng. Mỗi tầng nội tại giúp Laville tăng tốc đánh. Khi đạt đủ 3 tầng đòn đánh thường của hắn sẽ chuyển thành Đạn liên châu khiến mỗi đòn đánh bắn ra 3 phát đạn.">
+        <img src="../img/ntlv.png" alt="Đạn liên châu">
+    </div>
+
+    <div class="icon" onclick="doiSkill(this)" 
+         data-tieu-de="Đạn truy ảnh" 
+         data-noidung="Laville cường hóa bản thân khiến mỗi đòn đánh gây sát thương vật lý. Nếu bản thân đang trong trạng thái Đạn liên châu, mỗi phát đạn đồng thời gây sát thương lên 2 kẻ địch khác trong phạm vi.">
+        <img src="../img/c1lv.png" alt="Đạn truy ảnh">
+    </div>
+
+    <div class="icon" onclick="doiSkill(this)" 
+         data-tieu-de="Khiên phản tốc" 
+         data-noidung="Laville nhận 1 lá chắn đỡ chiêu và tăng tốc chạy cho bản thân. Đồng thời đòn đánh thường trong 3 giây kế sẽ khiến mục tiêu bị làm chậm, tối đa cộng dồn 3 lần.">
+        <img src="../img/c2lv.png" alt="Khiên phản tốc">
+    </div>
+
+    <div class="icon" onclick="doiSkill(this)" 
+         data-tieu-de="Đạn thần quang" 
+         data-noidung="Laville kết hợp đôi súng thần quang bắn ra phát đạn ánh sáng có thể bay xuyên bản đồ gây sát thương vật lý bùng nổ trong phạm vi lên tướng địch và khiến chúng bị choáng. Tướng địch trực tiếp trúng chiêu này sẽ bị choáng.">
+        <img src="../img/c3lv.png" alt="Đạn thần quang">
+    </div>
+</div>
+
+<div class="khung-chi-tiet">
+    <h3 id="tieu-de-skill">Yêu hồ</h3>
+    <p id="mo-ta-skill"><b>Nội tại:</b><br>Dạng người: Trong trạng thái loài người Liliana sẽ đánh xa.<br>Dạng hồ ly: Tăng giáp và giáp phép và tốc chạy. Đồng thời, đòn đánh thường gây sát thương phép.</p></div>
+</div>
+</div>
+<div class="cotphai">
+        <h3 class="chu">Laville – Thần Quang</h3>
+        <p>Laville cũng từng giống như những thiếu niên bình thường khác, yêu thích sự tự do và tính cách phóng khoáng, thích náo nhiệt. Nàng... ơ không, chàng yêu từng khoảnh khắc vui vẻ trên thế gian cho nên các bậc trưởng bối đã đem nhiệm vụ bảo vệ ánh sáng giao phó cho chàng.</p><br>
+
+        <p>Laville không phụ kỳ vọng của mọi người, chàng đã dùng sự lạc quan và nguồn năng lượng dồi dào để đoàn kết toàn bộ các chiến hữu lại thành một sức mạnh khổng lồ đáng gờm. Những sinh linh và kẻ thù đối đầu với chàng nói thật là đủ mọi kỳ hình quái trạng, thể loại nào cũng có, thậm chí cũng có cả những quái vật khổng lồ và khát máu nữa. Dưới sự yểm trợ của Laville, lực lượng phe ta đã chiến đấu anh dũng và đẩy lùi ma tộc giương oai vạn dạn.</p><br>
+
+        <p>Sau cuộc chiến, Laville quay về vương quốc ánh sáng và lại tiếp tục sinh hoạt vui vẻ, sống cuộc sống yêu đời của một xạ thủ hào hiệp. Tuy nhiên chàng cũng đã trưởng thành lên không ít đồng thời cũng phải gánh vác nhiều trách nhiệm lớn lao. Cho đến nay dù Laville đã trở thành niềm kính ngưỡng, sự hâm mộ của mọi người nhưng anh vẫn luôn tràn đầy nhiệt huyết, sát cánh cùng đồng đội và canh giữ cho hòa bình, không để cho ma tộc tác oai tác quái quay lại thế giới.</p><br>
+        </div>
+    </div>
+</div>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+</main>
+    <footer>
+        <div> 
+            Thông tin liên hệ:<span>Nguyễn Thị Thu Ngân</span> 
+            <br>Địa chỉ: <span>CĐ CNTT K25A</span>
+            <br>Số điện thoại:<span>0355518725</span>
+        </div>
+        <p style="font-family: Segoe Print">cre:lienquan_hình ảnh chỉ mang tính chất minh họa và sử dụng cho học tập</p>
+    </footer>
+    <script src="../java/scrip.js"></script>
+</body>
+</html>
