@@ -8,7 +8,7 @@
 }
 
 header{
-    background-image: url(./header.jpg);
+    background-image: url(../img/header.jpg);
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
@@ -198,7 +198,7 @@ body{
 }
 
 footer{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./footer.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/footer.jpg);
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
@@ -298,4 +298,131 @@ span{
     width: 100%;         
     display: block;
     pointer-events: none;
+}
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        min-height: 115px;
+        padding: 12px 10px;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+        background-position: center;
+    }
+
+    #logo {
+        width: 95px;
+        max-width: 30%;
+    }
+
+    #ten {
+        min-width: 0;
+        max-width: 70%;
+        font-size: 14px;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    nav {
+        height: auto;
+        min-height: 62px;
+        gap: 0;
+        padding: 6px 4px;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+
+    nav a {
+        height: auto;
+        min-height: 48px;
+        padding: 8px 7px;
+        justify-content: center;
+        text-align: center;
+        line-height: 1.25;
+        flex: 1 1 25%;
+        max-width: 50%;
+    }
+
+    nav a.active .thanh-ngang {
+        width: 90%;
+        top: 0;
+    }
+
+    .thads {
+        height: auto;
+        flex: 1 1 25%;
+        justify-content: center;
+    }
+
+    .thads > a {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .dscon {
+        left: 50%;
+        width: 170px;
+        max-width: 90vw;
+        z-index: 1100;
+    }
+
+    .dscon li a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .thanh-ngang {
+        width: 85%;
+        max-width: 420px;
+    }
+
+    .traitim {
+        font-size: 16px;
+        margin: 0 8px;
+    }
+
+    .khung-anh {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .anh-slide,
+    .anh-slide img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .bia {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .khung-anh1 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .khung-anh1 .anh-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 12px 10px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
 }
