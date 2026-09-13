@@ -19,134 +19,79 @@ img {
 .khung-nd {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     width: 100%;
-    max-width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
+    gap: 20px;
 }
 
 .cottrai {
-    flex: 1 1 0;
-    width: 60%;
-    max-width: 100%;
+    flex: 1 1 60%;
     min-width: 0;
-    box-sizing: border-box;
-    color: #e0d0d0;
-    line-height: 1.6;
-    font-size: 18px;
-    text-align: justify;
-    overflow-wrap: anywhere;
 }
 
 .cotphai {
-    flex: 1 1 0;
-    width: 40%;
-    max-width: 100%;
+    flex: 1 1 35%;
     min-width: 0;
-    box-sizing: border-box;
-    color: #e0d0d0;
+}
+
+/* Chữ tự co giãn */
+body {
+    font-size: clamp(14px, calc(8px + 1vw), 18px);
+}
+
+.khunglinh p,
+.cottrai,
+.cotphai,
+.tintuc {
+    font-size: clamp(14px, calc(8px + 0.8vw), 18px);
     line-height: 1.6;
-    font-size: 18px;
-    text-align: justify;
-    overflow-wrap: anywhere;
 }
 
-.khung-nd img,
-.cottrai img,
-.cotphai img,
-.hoso img {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-}
-
-.khung-nd p,
-.khung-nd h1,
-.khung-nd h2,
-.khung-nd h3,
-.khung-nd span {
-    max-width: 100%;
-    overflow-wrap: anywhere;
-    white-space: normal;
+.chu {
+    font-size: clamp(20px, calc(10px + 1.5vw), 36px);
 }
 
 @media (max-width: 768px) {
-
-    .khung-nd {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        padding: 10px;
-        overflow: hidden;
-    }
-
-    .cottrai,
-    .cotphai {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        margin: 0 0 20px 0;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 15px;
-        line-height: 1.6;
-        text-align: justify;
-        overflow-wrap: anywhere;
-        word-break: normal;
-    }
-
-    .cottrai h2,
-    .cottrai h3,
-    .cotphai h2,
-    .cotphai h3 {
-        max-width: 100%;
-        font-size: 20px;
-        overflow-wrap: anywhere;
-    }
-
-    .khung-nd img,
-    .cottrai img,
-    .cotphai img,
-    .hoso,
-    .hoso img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        box-sizing: border-box;
-    }
-
-    .ds-icon {
-        display: flex;
+    nav {
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        gap: 8px 16px;
+        padding: 10px;
+        font-size: 15px;
     }
-
-    .icon {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-@media (max-width: 480px) {
 
     .khung-nd {
-        padding: 5px;
+        display: block;
+        width: 100%;
+        padding: 10px;
     }
 
     .cottrai,
     .cotphai {
-        padding: 5px;
-        font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        font-size: 15px;
     }
 
-    .cottrai h2,
-    .cottrai h3,
-    .cotphai h2,
-    .cotphai h3 {
-        font-size: 18px;
+    .khunglinh {
+        width: 100%;
+    }
+
+    .tvtp .hinh {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .tintuc {
+        width: 100%;
+        padding: 15px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
     }
 }
