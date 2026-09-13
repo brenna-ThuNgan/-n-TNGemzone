@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNGemZone</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/stylemain.css">
+</head>
+<body>
+    <div class="dau-trang">
+    <header>
+        <img id="logo" src="../img/logo.png" alt="logo">
+        <div  id="ten">
+            <h1>TN<span>GemZone</span></h1>
+            <p>Nâng Tầm Trải Nghiệm - Kết Nối Đam Mê</p>
+        </div>
+    </header>
+    <nav>
+       <a href="/index.html">Trang Chủ</a>
+       <div class="thads">
+        <a href="#">Tin Tức ▾</a>
+        <ul class="dscon">
+            <li><a href="./tintuc.html#capnhat">Cập Nhật</a></li>
+            <li><a href="./tintuc.html#sukien">Sự Kiện</a></li>
+            <li><a href="./giaidau.html">Giải Đấu</a></li>
+            <li><a href="./tintuc.html#canbang">Cân Bằng</a></li>
+            <li><a href="./tintuc.html#sualoi">Sửa lỗi</a></li>
+        </ul>
+    </div>
+       <div class="thads">
+        <a href="#"class="active"><div class="thanh-ngang"><span class="traitim">♥</span></div>Học Viện ▾</a>
+        <ul class="dscon">
+            <li><a href="./baiviet.html#taobai">Bài Viết</a></li>
+            <li><a href="./baiviet.html#baivietnoibat">Bài viết Nổi Bật</a></li>
+        </ul>
+    </div>
+       <a href="./gameplay.html">GamePlay</a>
+    </nav>
+    </div>
+<main class="tintuc">
+  <div class="ndtintuc">
+  <h3 id="taobai">TẠO BÀI VIẾT MỚI</h3>
+ <form class="baiviet" id="formBaiViet">
+    <div class="gr">
+        <label>Tiêu đề bài viết</label>
+        <input type="text" placeholder="Nhập tiêu đề..." required>
+    </div>
+    <div class="gr">
+        <label>Thể loại</label>
+        <select required>
+            <option value="" disabled selected>-- Chọn thể loại --</option>
+            <option value="tips">Tips & Tricks</option>
+            <option value="beta">Cập nhật BETA</option>
+            <option value="review">Review Tướng</option>
+        </select>
+    </div>
+    <div class="gr">
+        <label>Link hình ảnh</label>
+        <input type="text" placeholder="Dán đường dẫn ảnh..." required>
+    </div>
+    <div class="gr">
+        <label>Nội dung chi tiết</label>
+        <textarea rows="8" placeholder="Nhập nội dung..." required></textarea>
+    </div>
+    <div class="nutbam">
+        <button type="button" class="nutluu" onclick="xuLyLuu()">Lưu bản nháp</button>
+        <button type="submit" class="nutdang" onclick="xuLyDang(event)">Đăng bài viết</button>
+    </div>
+</form>
+  <h3 id="baivietnoibat">BÀI VIẾT NỔI BẬT</h3>
+  <div>
+  <img src="../img/krixi6.jpg">
+  <h2>Krixi - “Nữ Hoàng Quốc Dân Đường Giữa” | Đơn Giản Nhưng Chưa Bao Giờ Hết Khó Chịu Trong Liên Quân Mobile</h2>
+        <p>Krixi là một trong những pháp sư lâu đời và dễ chơi nhất của game. Rất nhiều người nghĩ: “Krixi là tướng cho người mới”. Nhưng thực tế ở rank cao:</p>
+        <p><strong>Krixi vẫn luôn có đất diễn</strong> nhờ lượng sát thương ổn định, khống chế tốt và khả năng giao tranh cực mạnh.</p>
+
+        <h4>Tổng Quan Tướng:</h4>
+        <ul>
+            <li>Vai trò: Pháp sư</li>
+            <li>Vị trí: Đường giữa</li>
+            <li>Phong cách: Cấu rỉa – khống chế – giao tranh tổng ổn – đơn mục tiêu là chính</li>
+            <li>Độ khó: Thấp</li>
+        </ul>
+
+        <h4>Ưu Điểm</h4>
+        <ul>
+            <li>Dễ chơi</li>
+            <li>Giao tranh mạnh</li>
+            <li>Cấu rỉa tốt</li>
+            <li>Khống chế khó chịu</li>
+        </ul>
+
+        <h4>Nhược Điểm</h4>
+        <ul>
+            <li>Cực kỳ mỏng</li>
+            <li>Không cơ động</li>
+            <li>Dễ bị sát thủ bắt</li>
+            <li>Phụ thuộc vị trí</li>
+            <li>Khó tối ưu nếu định hướng không chuẩn</li>
+        </ul>
+
+        <h4>Đánh Giá Hiện Tại</h4>
+        <p>Krixi không phải pháp sư quá hào nhoáng và meta như Zata, Gildur, Lorion, Annette. Nhưng lại là kiểu:</p>
+        <p><b>→ Không nổi bật nhất, nhưng cực kỳ ổn định nếu tận dụng tối đa sức mạnh vốn có.</b></p>
+    </div>   
+    <div class="thanh-ngang"><span class="traitim">♥</span></div>
+    <div class="baiviet-noidung">
+    <img src="../img/nata4.jpg">
+  <h2>Kẻ Huỷ Diệt Bùa "Xanh" Với Khả Năng Cướp Bùa Đầu Trận Cực Bá!! Natalya - Pháp Sư “Đứng Đúng Chỗ Là Có Mạng”</h2>
+        <p>Natalya là mẫu pháp sư dồn sát thương thuần túy, không cơ động, không hoa mỹ nhưng lại cực kỳ nguy hiểm nếu đối phương đi sai vị trí hoặc chủ quan. Sức mạnh của Natalya nằm ở khả năng sốc sát thương nhanh, ép giao tranh và trừng phạt sai lầm rất nặng.</p>
+
+    <h4>Đánh Giá Sức Mạnh Natalya Trong Meta Hiện Tại:</h4>
+    <ul>
+        <li>Không phải hot pick ở rank cao.</li>
+        <li>Kén đội hình và kén kèo đấu.</li>
+        <li>Nhưng khi gặp đội hình mỏng, thiếu cơ động, Natalya vẫn là con bài cực kỳ nguy hiểm.</li>
+        <li>Đây là vị tướng mạnh khi kết hợp cùng các tướng có khống chế như Grakk v.v…</li>
+    </ul>
+    
+    <p>Ngoài ra chiêu thức dame to hồi chiêu nhanh ở đầu trận giúp cô nàng farm nhanh chóng và có thể tiến vào rừng đối phương để xâm lấn.</p>
+</div>
+    </div>
+</main>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+    <footer>
+        <div> 
+            Thông tin liên hệ:<span>Nguyễn Thị Thu Ngân</span> 
+            <br>Địa chỉ: <span>CĐ CNTT K25A</span>
+            <br>Số điện thoại:<span>0355518725</span>
+        </div>
+        <p style="font-family: Segoe Print">cre:lienquan_hình ảnh chỉ mang tính chất minh họa và sử dụng cho học tập</p>
+    </footer>
+    <script src="../java/scrip.js"></script>
+</body>
+</html>

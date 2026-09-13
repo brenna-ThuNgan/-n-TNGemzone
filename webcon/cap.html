@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNGemZone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stylemain.css">
+</head>
+<body>
+    <div class="dau-trang">
+    <header>
+        <img id="logo" src="../img/logo.png" alt="logo">
+        <div  id="ten">
+            <h1>TN<span>GemZone</span></h1>
+            <p>Nâng Tầm Trải Nghiệm - Kết Nối Đam Mê</p>
+        </div>
+    </header>
+<nav>
+    <a href="/index.html">Trang Chủ</a>
+    <div class="thads">
+        <a href="#">Tin Tức ▾</a>
+        <ul class="dscon">
+           <li><a href="/webcon/tintuc.html">Cập Nhật</a></li>
+            <li><a href="/webcon/tintuc.html#sukien">Sự Kiện</a></li>
+            <li><a href="/webcon/giaidau.html">Giải Đấu</a></li>
+            <li><a href="/webcon/tintuc.html#canbang">Cân Bằng</a></li>
+            <li><a href="/webcon/tintuc.html#sualoi">Sửa lỗi</a></li>
+        </ul>
+    </div>
+    <div class="thads">
+        <a href="#">Học Viện ▾</a>
+        <ul class="dscon">
+            <li><a href="/webcon/baiviet.html#taobai">Bài Viết</a></li>
+            <li><a href="/webcon/baiviet.html#baivietnoibat">Bài viết Nổi Bật</a></li>
+        </ul>
+    </div>
+       <a href="/webcon/gameplay.html"class="active"><div class="thanh-ngang"><span class="traitim">♥</span></div>GamePlay</a>
+</nav>
+    </div>
+<main>
+    <div class="khung-anh"><div id="vungTruot"></div></div>
+<div class="tvtp">
+<div class="khung-nd">
+<div class="cottrai">
+        <div class="hinh">
+            <img id="hinh-lon" src="../img/Capheny.jpg" alt="Hình ảnh nhân vật lớn"></div><br>
+            <div class="thanh-ngang"><span class="traitim">♥</span></div>
+            <div><h2>Trang Phục</h2></div>
+<div class="ds">
+    <img class="hinh-nho active" src="../img/Capheny.jpg">
+    <img class="hinh-nho" src="../img/cap1.jpg">
+    <img class="hinh-nho" src="../img/cap2.jpg">
+    <img class="hinh-nho" src="../img/cap3.jpg">
+</div>
+<div><div class="thanh-ngang"><span class="traitim">♥</span></div>
+<h2>Kỹ Năng</h2>
+        <div class="ds-icon">
+            <div class="icon active" onclick="doiSkill(this)" 
+             data-tieu-de="Pháo tự động" 
+             data-noidung="<b>Nội tại:</b> Khẩu pháo tự động siêu tối tân Đệ tứ cho phép Capheny có thể vừa di chuyển vừa tấn công, chưa hết nó còn sở hữu 2 cơ chế bắn: Đại liên và Đại bác, bù lại Capheny gây giảm sát thương lên quái rừng (tăng dần trở lại bình thường theo cấp tướng). Ngoài ra tất cả tốc đánh nhận từ trang bị sẽ được chuyển hóa sang công vật lý.">
+            <img src="../img/ntc.png" alt="Pháo tự động">
+            </div>
+        
+            <div class="icon" onclick="doiSkill(this)" 
+             data-tieu-de="Đại bác / Đại liên" 
+             data-noidung="Đại bác: Capheny tăng tầm đánh, tiêu hao năng lượng mỗi lần tấn công (tự động chuyển về Đại liên khi hết năng lượng) và bắn xuyên mục tiêu, gây sát thương vật lý. Ngoài ra do súng nặng, và sức giật cao nên Capheny bị giảm tốc chạy.<br>Đại liên: Capheny được hồi năng lượng, càng nhiều nếu tấn công lên kẻ địch. Cô nàng sẽ bắn hai viên liên tục, gây sát thương vật lý.">
+            <img src="../img/c1c.png" alt="Đại bác / Đại liên">
+            </div>
+        
+            <div class="icon" onclick="doiSkill(this)" 
+             data-tieu-de="Pha phản lực / Pha động lực" 
+             data-noidung="Pha phản lực: Capheny lướt về phía trước và làm mới hoạt ảnh tấn công. Đồng thời, mỗi đòn đánh của cô sẽ tạo bùa chí mạng tăng tỷ lệ chí mạng, cộng dồn 10 lần. Xuất hiện ở trạng thái Đại bác.<br>Pha động lực: Capheny xoá hiệu ứng làm chậm đang chịu, tăng tốc chạy, đồng thời nhận bùa xuyên giáp, cộng dồn 10 lần. Xuất hiện ở trạng thái Đại liên, Bùa xuyên giáp và bùa chí mạng sẽ chuyển hoá toàn bộ thành bùa tương ứng khi Capheny đổi dạng súng">
+            <img src="../img/c2c.png" alt="Pha phản lực / Pha động lực">
+            </div>
+        
+            <div class="icon" onclick="doiSkill(this)" 
+             data-tieu-de="Mưa liên thanh" 
+             data-noidung="Capheny xả 15 đợt mưa đạn liên tục theo hình nón phía trước gây sát thương vật lý. Kẻ địch trúng chiêu sẽ bị giảm giáp; hiệu ứng có cộng dồn. Suốt thời gian này Capheny vẫn có thể di chuyển, bù lại bị giảm tốc chạy.">
+            <img src="../img/c3c.png" alt="Mưa liên thanh">
+            </div>
+        </div>
+            <div class="khung-chi-tiet">
+            <h3 id="tieu-de-skill">Tung cánh</h3>
+            <p id="mo-ta-skill"><b>Nội tại:</b> Khi tung kĩ năng trúng đích, tốc chạy của cô sẽ được tăng lên trong thời gian ngắn.</p>
+            </div>
+</div>
+</div>
+<div class="cotphai">
+        <h3 class="chu">Capheny – Pháo Liên Thanh</h3>
+        <p>Capheny cũng từng giống như những thiếu nữ tài năng khác, yêu thích sự sáng tạo và những phát minh cơ khí đầy mới mẻ. Nàng yêu từng cỗ máy cùng kỹ thuật tiên tiến cho nên đã đem niềm đam mê nghiên cứu khí tài giao phó cho bản thân.</p><br>
+        <p>Capheny không phụ kỳ vọng của mọi người, nàng đã dùng trí thông minh cùng vũ khí tối tân do chính mình chế tạo để đoàn kết toàn bộ lực lượng kháng chiến lại thành một sức mạnh khổng lồ đáng gờm. Những đối thủ và kẻ thù đối đầu với nàng nói thật là đủ mọi kỳ hình quái trạng, thể loại nào cũng có, thậm chí cũng có cả những quái vật khổng lồ và khát máu nữa. Dưới sự oanh tạc của Capheny, lực lượng phe ta đã chiến đấu anh dũng và đẩy lùi ma tộc giương oai vạn dạn.</p><br>
+        <p>Sau cuộc chiến, Capheny quay về xưởng kỹ thuật và lại tiếp tục sinh hoạt vui vẻ, sống cuộc sống nghiên cứu của một nhà phát minh trẻ. Tuy nhiên nàng cũng đã trưởng thành lên không ít đồng thời cũng phải xử lý nhiều dự án vũ khí quan trọng. Cho đến nay dù Capheny đã trở thành một xạ thủ lẫy lừng được mọi người kính ngưỡng, cô vẫn luôn sát cánh cùng đồng đội, không ngừng nâng cấp trang bị và canh giữ cho hòa bình, không để cho ma tộc tác oai tác quái quay lại xâm chiếm quê hương.</p>
+        </div>
+    </div>
+</div>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+</main>
+    <footer>
+        <div> 
+            Thông tin liên hệ:<span>Nguyễn Thị Thu Ngân</span> 
+            <br>Địa chỉ: <span>CĐ CNTT K25A</span>
+            <br>Số điện thoại:<span>0355518725</span>
+        </div>
+        <p style="font-family: Segoe Print">cre:lienquan_hình ảnh chỉ mang tính chất minh họa và sử dụng cho học tập</p>
+    </footer>
+    <script src="../java/scrip.js"></script>
+</body>
+</html>
