@@ -32,12 +32,11 @@
 }
 
 .tvtp {
-    width: 98%;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
     max-width: none;
-    margin: 20px auto 0;
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
+    margin: 0;
 }
 
 .chu {
