@@ -1,14 +1,16 @@
-let lastScrollTop = 0;
-const dauTrang = document.querySelector('.dau-trang');
-window.addEventListener('scroll', function() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        dauTrang.classList.add('an-menu');
+function () {
+    const dauTrang = document.querySelector(".dau-trang");
+
+    if (!dauTrang) return;
+
+    if (window.scrollY <= 10) {
+        dauTrang.classList.remove("an-header");
+        dauTrang.classList.remove("nav-dinh");
     } else {
-        dauTrang.classList.remove('an-menu');
+        dauTrang.classList.add("an-header");
+        dauTrang.classList.add("nav-dinh");
     }
-    
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; });
+});
 
 const vungTruot = document.getElementById('vungTruot');
 const danhSachSlide = document.querySelectorAll('.anh-slide');
