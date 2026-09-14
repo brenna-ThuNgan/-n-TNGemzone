@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,11 +32,11 @@ header {
     min-width: 0;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 2px;
     padding: 10px 20px;
     color: white;
     font-style: italic;
-    background-image: url(./header.jpg);
+    background-image: linear-gradient(90deg,rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(../img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,8 +44,7 @@ header {
 
 #logo {
     width: clamp(85px, 18vw, 200px);
-    height: auto;
-    flex-shrink: 0;
+    height: auto;X
 }
 
 #ten {
@@ -96,11 +96,13 @@ nav a {
 
 nav a.active,
 nav a:hover {
-    color: wheat;
+    transform: scale(1.1);
+    color: #ffd700;
+    text-shadow: 0 5 5px rgba(255, 215, 0, 0.5);
 }
 
 nav a.active {
-    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+    text-shadow: 0 0 1px #ffd700, 0 0 1px #fffffc;
 }
 
 nav a.active .thanh-ngang {
@@ -229,7 +231,7 @@ footer {
     font-size: clamp(14px, 2vw, 25px);
     font-weight: bold;
     letter-spacing: 1px;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./footer.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -250,6 +252,11 @@ span {
     padding: 0 15px;
 }
 
+.t-tp :hover{
+    transform: scale(1.01);
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
 .tp {
     width: min(200px, 100%);
     text-align: center;
