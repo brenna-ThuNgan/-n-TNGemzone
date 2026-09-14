@@ -215,6 +215,27 @@
     font-weight: bold;
     cursor: pointer;
 }
+.nutluu {
+  background-color: #262626;
+  color: #cccccc;
+  border: 1px solid #444;
+}
+
+.nutluu:hover {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #666;
+}
+.nutdang {
+  background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37);
+  color: #000000;
+  border: none;
+}
+
+.nutdang:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
 
 .khung-nd {
     display: flex;
