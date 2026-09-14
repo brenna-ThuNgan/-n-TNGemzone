@@ -1,4 +1,4 @@
-function () {
+window.addEventListener("scroll", function () {
     const dauTrang = document.querySelector(".dau-trang");
 
     if (!dauTrang) return;
