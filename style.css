@@ -129,8 +129,9 @@ nav a.active .thanh-ngang {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%,-19px);
+    transform: translate(-50%,30px);
     width: min(200px, 90vw);
+    max-width: 100px;
     align-items: center;
     z-index: 100;
 }
