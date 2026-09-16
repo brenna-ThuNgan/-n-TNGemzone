@@ -246,6 +246,12 @@
   border-color: #666;
 }
 
+.nutdang {
+  background-color: #ffb700;
+  color: #1e1e1e;
+  border: 2px solid #ffc002;
+}
+
 .khung-nd {
     display: flex;
     flex-wrap: wrap;
